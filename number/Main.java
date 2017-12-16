@@ -29,7 +29,7 @@ public class Main {
 				a = getNumber(scan);
 
 			}
-			
+
 		}
 		scan.close();
 		System.out.println("Brawo udało Ci się :)");
