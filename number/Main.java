@@ -23,21 +23,21 @@ public class Main {
 				System.out.println("Za mało!");
 				a = getNumber(scan);
 
-			} else if (r1 < a) {
+			} else {
 
 				System.out.println("Za dużo!");
 				a = getNumber(scan);
 
 			}
-
+			
 		}
-
+		scan.close();
 		System.out.println("Brawo udało Ci się :)");
 	}
 
 	private static int getNumber(Scanner scan) {
 		while (!scan.hasNextInt()) {
-			scan.next();
+			scan.nextLine();
 			System.out.println("To nie jest liczba");
 		}
 
